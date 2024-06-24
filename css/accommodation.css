@@ -1,0 +1,161 @@
+.accommodation {
+    padding-top: 35px;
+
+    padding-bottom: 35px;
+}
+
+.accommodation-list {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.accommodation-item:not(:nth-child(3n)) {
+    margin-right: 25px;
+}
+
+.accommodation-item {
+    flex: 1 0 33.33%;
+
+    flex-basis: 370px;
+    
+    margin-bottom: 25px;
+
+    min-height: 440px;
+
+    background: var(--color-white);
+
+    border-radius: 12px;
+}
+
+.accommodation-content {
+    padding: 35px 40px;
+}
+
+.accommodation-text {
+    font-family: "Myriad Pro";
+
+    color: #969696;
+
+    line-height: 32px;
+}
+
+.accommodation-price {
+    font-family: "Myriad Pro";
+
+    font-size: 22px;
+
+    color: var(--color-dark);
+
+    line-height: 32px;
+}
+
+.accommodation-night,
+.accommodation-name
+ {
+    font-family: "Myriad Pro";
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    color: var(--color-dark);
+
+    line-height: 32px;
+}
+
+.accommodation-adress {
+    font-family: "Myriad Pro";
+
+    color: var(--color-white-grey);
+
+    line-height: 32px;
+}
+
+.rating {
+    margin-left: 57px;
+}
+
+.accommodation-numbers-link {
+    margin-top: 20px;
+
+    padding: 14px 20px;
+
+    display: inline-block;
+
+    border: 1px solid var(--color-gold);
+
+    border-radius: 12px;
+
+    color: var(--color-gold);
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    transition: color .3s ease, background-color .3s ease;
+}
+
+.accommodation-numbers-link:hover {
+    color: var(--color-white);
+
+    background-color: var(--color-gold);
+}
+
+.accommodation-all-options {
+    padding: 50px 38px;
+
+    background: url('../img/placement/41.jpg') no-repeat;
+
+    background-size: cover;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    position: relative;
+
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.accommodation-all-options:hover {
+    transform: scale(1.05);
+
+    box-shadow: 4px 4px 8px 0px rgb(88, 87, 87);
+}
+
+.accommodation-options-link {
+    padding-right: 23px;
+
+    padding-bottom: 2px;
+
+    position: block;
+
+    background: url('../img/arrow3.svg') no-repeat right;
+
+    font-family: "Myriad Pro";
+
+    font-size: 22px;
+
+    color: var(--color-white);
+
+    line-height: 1;
+}
+
+.accommodation-options-link::before{
+    content: '';
+
+    display: block;
+
+    position: absolute;
+
+    top: 0;
+
+    bottom: 0;
+
+    right: 0;
+
+    left: 0;
+}

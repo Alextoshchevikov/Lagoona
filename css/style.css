@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box; /* Свойства width и height включают в себя значения полей и границ, но не отступов */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* box-sizing наследует значение родителя во всех элементах и псевдоэлементах */
+}
+
+body {
+  min-width: 320px; /* минимальная ширина 320px */
+
+  margin: 0;   /* отступы 0 */
+  
+  background-color: #f1f1f1; /* цвет фона */
+
+  font-family: "Muller", Arial, sans-serif;  /* семейство шрифтов */
+  
+  font-size: 16px; /* размер шрифта 16px */
+
+  font-weight: 400; /* нормальное начертание шрифта */
+
+  color: black; /* цвет черный */
+
+  line-height: 1; /* межстрочный интервал - 1 */
+}
+
+button, input {
+  font: inherit; /* шрифты элементов button, input наследуют значения родителя */
+}
+
+img {
+  max-width: 100%;
+
+  height: auto;  /* у картинок высота - авто, максимальная ширина - 100% */
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;        /* убирает подчеркивание у ссылок, цвет наследуется у родителя */  
+}
+
+ul {
+  list-style: none;    /* убирает точки у элементов списка */
+}
+ 
+
+h1, h2, h3, p, ul {
+  padding: 0;
+
+  margin: 0;            /* убирает отступы и поля у элементов */
+}
+
+h2 {
+    margin-left: 45px;
+}
+
+/* container */
+
+.container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding-right: 15px;
+  
+  padding-left: 15px;  /* максимальная ширина контейнера 1200px, отступы 0 авто, поля слева и справа 15px */
+}
+
+.visually-hidden {      /* универсальный служебный класс, элемент не влияет на соседей и становится невидимым */
+  position: absolute !important;
+
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+
+  clip: rect(1px, 1px, 1px, 1px);
+
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  height: 1px !important; 
+
+  width: 1px !important; 
+
+  overflow: hidden;             
+}
+
+/* при работе с float */
+
+.clearfix::after {     /* невидимый блок, который будет отменять действие float у вышестоящих элементов */
+  content: "";
+
+  display: table;
+
+  clear: both;         
+}
+
+.text-center {
+    text-align: center;     /* выравнивание текста по центру */
+}
+
+.star {
+    width: 14px;
+
+    height: 14px;  /* высота и ширина звездочек */
+}
+
+.section-heading {
+  margin-bottom: 22px;
+
+  font-size: 40px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  color: #333;
+}
+
+:root {
+  --color-gold: #cc9933;
+
+  --color-white: #fff;
+
+  --color-dark: #333;
+
+  --color-gray: #666;
+
+  --color-white-grey: #999;
+}
+
+/* var(--color-white-grey) */

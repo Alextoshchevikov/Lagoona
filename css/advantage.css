@@ -1,0 +1,75 @@
+.advantage {
+    padding-top: 35px;
+
+    padding-bottom: 35px;
+}
+
+.advantage-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.advantage-item {
+    flex: 1 1 20%;
+
+    margin-right: 25px;
+
+    margin-bottom: 25px;
+
+    padding: 123px 44px 44px;
+
+    background: no-repeat var(--color-white);
+
+    background-size: 62px 60px;
+
+    background-position: 44px 44px;
+
+    border-radius: 12px;
+
+    font-family: "Myriad Pro";
+
+    line-height: 32px;
+
+    color: var(--color-dark);
+
+    max-width: 274px;
+}
+
+.advantage-item:nth-child(4n), .advantage-item:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.advantage-item1 {
+    background-image: url('../img/advantage/bathtub.svg');
+}
+
+.advantage-item2 {
+    background-image: url('../img/advantage/hanger.svg');
+}
+
+.advantage-item3 {
+    background-image: url('../img/advantage/heating.svg');
+}
+
+.advantage-item4 {
+    background-image: url('../img/advantage/hotel-key.svg');
+}
+
+.advantage-item5 {
+    background-image: url('../img/advantage/parking.svg');
+}
+
+.advantage-item6 {
+    background-image: url('../img/advantage/reception.svg');
+}
+
+.advantage-item7 {
+    background-image: url('../img/advantage/security-box.svg');
+}
+
+.advantage-item8 {
+    background-image: url('../img/advantage/swimming-pool.svg');
+}
